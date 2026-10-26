@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANDINI A.N - Mix Pastel</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Fredoka',sans-serif}
+body{background:#eaf4e2;color:#3a3a5c;position:relative;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background-image:radial-gradient(#c8e6c9 2px,transparent 2px),radial-gradient(#f8bbd0 2px,transparent 2px),radial-gradient(#d1c5e8 2px,transparent 2px);background-size:60px 60px,80px 80px,100px 100px;opacity:0.3;z-index:-1}
+nav{max-width:1200px;margin:15px auto;background:#c8b6ff;border-radius:100px;padding:10px 25px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 4px 15px rgba(0,0,0,0.08)}
+.logo{font-family:'Comfortaa';font-size:24px;font-weight:700;display:flex;align-items:center;gap:10px}
+.logo span{width:40px;height:40px;background:#a8d5a2;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px}
+.badge-nav{background:#ffd6e7;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600}
+.menu{display:flex;gap:10px}
+.menu a{padding:7px 16px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:600;color:#3a3a5c}
+.menu a:nth-child(1){background:#a8d5a2} .menu a:nth-child(2){background:#c8b6ff} .menu a:nth-child(3){background:#ffd6e7} .menu a:nth-child(4){background:#a8d5a2}
+.wrap{max-width:1200px;margin:20px auto;padding:0 15px;display:grid;grid-template-columns:1.5fr 1fr;gap:18px}
+.card{border-radius:24px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,0.06);position:relative}
+.pink{background:#ffd6e7} .lilac{background:#c8b6ff} .green{background:#a8d5a2} .light{background:#fff8fb;border:2px dashed #c8b6ff}
+.card h3{font-family:'Comfortaa';font-size:20px;margin-bottom:10px}
+.hero-img{width:110px;height:110px;border-radius:50%;border:4px solid white;object-fit:cover;float:left;margin-right:15px}
+.btn{padding:10px 20px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px;display:inline-block;margin:5px}
+.btn-g{background:#81b79a;color:white} .btn-l{background:white;border:2px solid #c8b6ff;color:#3a3a5c}
+table{width:100%;border-collapse:separate;border-spacing:0 6px;font-size:12px}
+th{background:rgba(0,0,0,0.08);padding:8px;border-radius:6px} td{background:white;padding:10px;border-radius:8px}
+ul{padding-left:18px;line-height:1.9;font-size:13px}
+.motto{font-size:18px;font-weight:700;font-style:italic;color:#7a5a9a;background:white;padding:12px;border-radius:12px;border-left:5px solid #a8d5a2}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:15px}
+.contact-box{background:white;padding:12px;border-radius:15px;text-align:center}
+.contact-box a{text-decoration:none;font-size:12px;color:#3a3a5c;font-weight:600}
+.doodle{position:absolute;font-size:20px;opacity:0.6}
+@media(max-width:900px){.wrap{grid-template-columns:1fr} .bento{grid-template-columns:1fr !important} nav{flex-direction:column;gap:10px;border-radius:20px} .menu{flex-wrap:wrap;justify-content:center}}
+.bento{max-width:1200px;margin:0 auto;padding:0 15px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><span>🌼</span> ANDINI A.N <span class="badge-nav"></span></div>
+  <div class="menu"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+</nav>
+
+<div class="wrap">
+  <!-- PROFIL + GAMBAR + TEXT -->
+  <div class="card pink" id="about">
+    <span class="doodle" style="top:10px;right:20px">✨</span>
+    <img class="hero-img" src="andini.jpeg" alt="Andini">
+    <h3>Hi, I'm ANDINI A.N</h3>
+    <p style="font-size:14px;font-weight:600">MAHASISWA STMIK EL RAHMA| Calon Profesional Teknologi</p>
+    <p style="font-size:12px;margin:8px 0;line-height:1.5">Selamat datang di website protofolio pribadi saya.Website ini berisi profil,pendidikan, cita-cita,dan pandangan hidup. 🌱✨</p>
+    <div style="margin-top:12px">
+    </div>
+  </div>
+
+  <!-- PANDANGAN HIDUP -->
+  <div class="card lilac">
+    <h3>About Me ✨</h3>
+    <p style="font-size:13px;line-height:1.6"><b>Profil:</b> Mahasiswi STMIK El Rahma Yogyakarta yang suka memadukan warna hijau yang calm, pink yang ceria, dan lilac yang dreamy.</p>
+    <div class="motto" style="margin-top:12px">
+      "Grow gently, bloom boldly, stay kind."
+      <br><span style="font-size:11px;font-weight:400">- Pandangan hidupku</span>
+    </div>
+  </div>
+</div>
+
+<div class="bento">
+  <!-- LIST - SKILLS & CITA-CITA -->
+  <div class="card green" id="skills" style="grid-column:span 2">
+    <h3>🎨 Skills</h3>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px">
+      <span style="background:#c8b6ff;padding:6px 14px;border-radius:20px;font-size:12px">Branding</span>
+      <span style="background:#7baa65;padding:6px 14px;border-radius:20px;font-size:12px">Businessman</span>
+      <span style="background:#ffd6e7;padding:6px 14px;border-radius:20px;font-size:12px">Teamwork</span>
+      <span style="background:#c8b6ff;padding:6px 14px;border-radius:20px;font-size:12px">Creative design</span>
+      <span style="background:#a8d5a2;border:2px solid white;padding:6px 14px;border-radius:20px;font-size:12px">Learn new technology</span>
+    </div>
+    <h3 style="margin-top:20px">🎯 Cita-Cita</h3>
+    <ul>
+      <li>Menjadi web developer yang karyanya warna-warni & membantu banyak orang</li>
+      <li>Membuka studio desain dengan tema matcha-strawberry-taro</li>
+      <li>Lulus dengan IPK terbaik dan membanggakan orang tua</li>
+    </ul>
+  </div>
+
+  <!-- LIST - PENGALAMAN -->
+  <div class="card pink">
+    <h3>Experience 💼</h3>
+    <p style="font-size:13px;margin-top:10px"><b>2024-2025 • Wirausaha</b> PKL[Praktik Kerja Lapangan]<br><span style="font-size:11px;opacity:0.7"></span></p>
+  </div>
+
+  <!-- TABEL - PENDIDIKAN -->
+  <div class="card light" style="grid-column:span 2">
+    <h3>🎓 Education / Pendidikan</h3>
+    <table>
+      <tr><th>YEAR</th><th>QUALIFICATION</th><th>INSTITUTION</th><th>NOTE</th></tr>
+      <tr><td>2014-2019</td><td>SD </td><td>SD N01 Kasui Pasar</td><td>Lulus</td></tr>
+      <tr><td>2020-2022</td><td>SMP/MTS </td><td>MTSN 1 Way Kanan</td><td>Lulus</td></tr>
+      <tr><td>2023-2026</td><td>SMA/SMK</td><td>SMK Al-fajar </td><td>Lulus</td></tr>
+      <tr><td>2026</td><td>Kuliah</td><td>STMIK El Rahma yogyakarta</td><td>Mahasiswa</td></tr>
+    </table>
+  </div>
+
+  <!-- LINK - KONTAK -->
+  <div class="card pink" id="contact">
+    <h3>📧 Contact & Link</h3>
+    <p style="font-size:12px;margin-top:5px">andiniaidinningrum3117@email.com<br>Yogyakarta, Indonesia</p>
+    <div class="contact-grid">
+      <div class="contact-box"><a href="https://www.instagram.com/4coundtw0.nut?xtok=NDkwcG04cmZzMnl4" target="_blank">📸<br>Instagram</a></div>
+      <div class="contact-box" style="background:#a8d5a2"><a href="https://wa.me/6287763112553" target="_blank">💬<br>WhatsApp</a></div>
+    </div>
+    <p style="font-size:10px;margin-top:10px;text-align:center">✉️ andiniaidinningrum3117@email.com </p>
+  </div>
+</div>
+
+<footer style="text-align:center;padding:30px;font-size:12px">© 2026 ANDINI A.N  🌿💖💜</footer>
+
+</body>
+</html>
